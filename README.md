@@ -1,6 +1,7 @@
-# JailbreakRepository
+# BrooklynJailbreakRepo
 
 * This is a template for [Brooklyn](https://github.com/BrooklynSwift/Brooklyn) showcasing a web UI for a jailbreak repository, demonstrating common CSS features using pure Swift, including:
+
 	* Custom classes & fonts
 	* Keyframes
 	* Media queries
