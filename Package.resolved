@@ -1,5 +1,5 @@
 {
-  "originHash" : "8fe847c29cfafc69ce918a1501b912aaaaa005402e63982e56778a1074020a2f",
+  "originHash" : "bc50d8dd4a340e425fd065e3421444d57dac516da3cfb7c05d920de2b06d3169",
   "pins" : [
     {
       "identity" : "brooklyn",
@@ -7,7 +7,7 @@
       "location" : "https://github.com/BrooklynSwift/Brooklyn",
       "state" : {
         "branch" : "main",
-        "revision" : "026842df0a813d946137bff6d68c9183e7f9aefb"
+        "revision" : "fc853143deb2d5db4c666823bd573cdd11c9f62b"
       }
     },
     {
