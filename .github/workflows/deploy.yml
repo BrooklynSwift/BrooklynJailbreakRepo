@@ -1,0 +1,44 @@
+name: Deploy website to Cloudflare
+
+on:
+  pull_request:
+
+  push:
+    branches:
+      - main
+    paths:
+      - Sources/**
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: macos-15
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Cache SPM
+        uses: actions/cache@v4
+        with:
+          path: .build
+          key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+          restore-keys: |
+            ${{ runner.os }}-spm-
+
+      - name: Build Swift package
+        run: swift build -c release
+
+      - name: Run Swift package
+        run: .build/release/BrooklynJailbreakRepo
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3.9.0
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ${{ github.workspace }}/Build/ --project-name=brooklynjailbreakrepo

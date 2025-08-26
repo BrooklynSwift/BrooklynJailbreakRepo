@@ -1,0 +1,42 @@
+{
+  "originHash" : "8fe847c29cfafc69ce918a1501b912aaaaa005402e63982e56778a1074020a2f",
+  "pins" : [
+    {
+      "identity" : "brooklyn",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BrooklynSwift/Brooklyn",
+      "state" : {
+        "branch" : "main",
+        "revision" : "026842df0a813d946137bff6d68c9183e7f9aefb"
+      }
+    },
+    {
+      "identity" : "htmlcoretype",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/BrooklynSwift/HTMLCoreType",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a7dea32a7082989cf60138408424afad66f9d81b"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "309a47b2b1d9b5e991f36961c983ecec72275be3",
+        "version" : "1.6.1"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax",
+      "state" : {
+        "revision" : "64889f0c732f210a935a0ad7cda38f77f876262d",
+        "version" : "509.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}
