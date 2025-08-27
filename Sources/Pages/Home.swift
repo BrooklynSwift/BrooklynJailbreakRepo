@@ -44,7 +44,7 @@ struct Home: PageContent {
 		.alignItems(.center)
 		.fontFamily(.init(name: "Quicksand"))
 		.frame(minHeight: .webkitFillAvailable)
-		.frame(minHeight: .vh(100))
+		.frame(minHeight: .dvh(100))
 	}
 
 	@HTMLWidgetBuilder
